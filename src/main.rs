@@ -33,6 +33,9 @@ fn model(app: &App) -> Model {
         app.window_rect().w() as u32 / 6,
         app.window_rect().h() as u32 / 6,
     ));
+
+    let image = image.brighten(60);
+
     let rect = Rect::from_x_y_w_h(
         0.0,
         0.0,
